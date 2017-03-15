@@ -12,7 +12,7 @@ issues. This behavior is implemented with the **Request Matchers**.
 Using the built-in Matcher
 --------------------------
 
-A request matcher is a class that checks whether a given ``Request`` instance
+A request matcher is a object that checks whether a given ``Request`` instance
 matches a set of conditions. Symfony provides a
 :class:`built-in matcher <Symfony\\Component\\HttpFoundation\\RequestMatcher>`
 which matches paths and IPs. For example, if you want to only show the profiler
