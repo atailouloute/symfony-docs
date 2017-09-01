@@ -22,6 +22,7 @@ like this:
 
     .. code-block:: yaml
 
+        # app/config/config.yml
         framework:
             workflows:
                 blog_publishing:
@@ -99,8 +100,8 @@ like this:
 
         // app/config/config.php
 
-                $container->loadFromExtension('framework', array(
-                    // ...
+        $container->loadFromExtension('framework', array(
+            // ...
                     'workflows' => array(
                         'blog_publishing' => array(
                           'type' => 'workflow', // or 'state_machine'
