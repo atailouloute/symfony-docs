@@ -347,7 +347,7 @@ is thrown::
     ]);
 
     // InvalidOptionsException: The option "host" with value "25" is
-    // expected to be of type "string"
+    // expected to be of type "string", but is of type "int"
 
 In sub-classes, you can use :method:`Symfony\\Component\\OptionsResolver\\OptionsResolver::addAllowedTypes`
 to add additional allowed types without erasing the ones already set.
@@ -383,7 +383,9 @@ is thrown::
     ]);
 
     // InvalidOptionsException: The option "transport" has the value
-    // "send-mail", but is expected to be one of "sendmail", "mail", "smtp"
+    // "send-mail", but is 
+    
+    to be one of "sendmail", "mail", "smtp"
 
 For options with more complicated validation schemes, pass a closure which
 returns ``true`` for acceptable values and ``false`` for invalid values::
